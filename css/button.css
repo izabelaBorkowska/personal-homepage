@@ -1,0 +1,15 @@
+.button {
+  color: aliceblue;
+  margin: auto;
+  background-color: rgb(30, 101, 101);
+  border-radius: 10px 0px;
+  border-style: none;
+  max-width: 700px;
+  padding: 8px;
+  font: normal 15px "lato", sans-serif;
+}
+
+.button--theme {
+  margin-right: 70%;
+  padding: 15px;
+}

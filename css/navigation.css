@@ -1,0 +1,41 @@
+.navigation__list {
+  color: aliceblue;
+  background-color: rgb(30, 101, 101);
+  border-radius: 10px 0px;
+  margin: 20px;
+}
+
+.navigation__item {
+  display: block;
+  color: aliceblue;
+  display: inline;
+  padding: 45px;
+}
+
+.navigation__link:link {
+  text-decoration: none;
+  font: normal 20px "lato", sans-serif;
+  color: aliceblue;
+}
+
+.navigation__link:visited {
+  font: normal 20px "lato", sans-serif;
+  color: aliceblue;
+}
+
+.navigation__link:focus {
+  color: aliceblue;
+  font: normal 20px "lato", sans-serif;
+  outline: 1px solid aliceblue;
+}
+
+.navigation__link:hover {
+  color: rgb(1, 150, 150);
+  font: normal 22px "lato", sans-serif;
+}
+
+.navigation__link:active {
+  color: rgb(1, 150, 150);
+  font: normal 20px "lato", sans-serif;
+  outline: none;
+}
