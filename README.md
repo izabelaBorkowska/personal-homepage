@@ -1,6 +1,6 @@
 # Izabela Borkowska -My First Website
  
-### DEMO:http://izabelaborkowska.repo/
+### DEMO: https://izabelaborkowska.github.io/personal-homepage/
  
  
 ### Description 
