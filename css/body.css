@@ -33,6 +33,5 @@
 
 .element {
 max-width: 1500px; 
- background-image: url("../images/background.jpg");
-
+ background-image: url("images/background.jpg");
 }
