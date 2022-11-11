@@ -1,29 +1,33 @@
-console.log("Witaj na mojej stronie!-Zmiana wiadomosci");
+{
+  const welcome = () => {
+    console.log("Witaj na mojej stronie!");
+  };
 
-// JS -zmiana motywu
+  welcome();
 
-let changeTheme = document.querySelector(".js-changeTheme");
-let body = document.querySelector(".body");
- 
-changeTheme.addEventListener("click", () => {
-body.classList.toggle("dark");
+  const changeBackground = () => {
+    const body = document.querySelector(".body");
+    const changeTheme = document.querySelector(".js-changeTheme");
 
-changeTheme.innerText = body.classList.contains("dark") ? "Włącz jasny motyw" : "Włącz ciemny motyw"
-});
+    body.classList.toggle("dark");
+    changeTheme.innerText = body.classList.contains("dark")
+      ? "Włącz jasny motyw"
+      : "Włącz ciemny motyw";
+  };
 
-//JS poprzednia - moja wersja na dole 
+  const init = () => {
+    const changeTheme = document.querySelector(".js-changeTheme");
+    changeTheme.addEventListener("click", changeBackground);
+  };
 
-//  if (body.classList.contains("dark")) {
- //  changeTheme.innerText = "Włącz jasny motyw";
- //} else {
-  //  changeTheme.innerText = "Włącz ciemny motyw";
-//}
+  init();
+}
 
-// JS -usuniecie zdjecia
+{
+  const buttonPhoto = document.querySelector(".js-buttonPhoto");
 
-let buttonPhoto = document.querySelector(".js-buttonPhoto");
-
-buttonPhoto.addEventListener("click", () => {
-  let mainPhoto = document.querySelector(".mainPhoto");
-  mainPhoto.remove();
-});
+  buttonPhoto.addEventListener("click", () => {
+    const mainPhoto = document.querySelector(".mainPhoto");
+    mainPhoto.remove();
+  });
+}
