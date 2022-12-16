@@ -1,11 +1,10 @@
 {
   const welcome = () => {
-    console.log("Witaj na mojej stronie :) ");
+    console.log("Welcome on my site :) ");
   };
 
-  const changeBackground = () => {
+  const changeBackground = (changeTheme) => {
     const body = document.querySelector(".body");
-    const changeTheme = document.querySelector(".js-changeTheme");
 
     body.classList.toggle("dark");
     changeTheme.innerText = body.classList.contains("dark")
@@ -21,9 +20,7 @@
   };
 
   init();
-}
 
-{
   const buttonPhoto = document.querySelector(".js-buttonPhoto");
 
   buttonPhoto.addEventListener("click", () => {
