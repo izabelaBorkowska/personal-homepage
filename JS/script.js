@@ -12,19 +12,19 @@
       : "Włącz ciemny motyw";
   };
 
+  const onButtonPhotoClick = () => {
+    const mainPhoto = document.querySelector(".mainPhoto");
+    mainPhoto.remove();
+  };
+
   const init = () => {
     const changeTheme = document.querySelector(".js-changeTheme");
+    const buttonPhoto = document.querySelector(".js-buttonPhoto");
     changeTheme.addEventListener("click", changeBackground);
+    buttonPhoto.addEventListener("click", onButtonPhotoClick);
 
     welcome();
   };
 
   init();
-
-  const buttonPhoto = document.querySelector(".js-buttonPhoto");
-
-  buttonPhoto.addEventListener("click", () => {
-    const mainPhoto = document.querySelector(".mainPhoto");
-    mainPhoto.remove();
-  });
 }
