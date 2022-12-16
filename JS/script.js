@@ -3,8 +3,6 @@
     console.log("Witaj na mojej stronie :) ");
   };
 
-  welcome();
-
   const changeBackground = () => {
     const body = document.querySelector(".body");
     const changeTheme = document.querySelector(".js-changeTheme");
@@ -18,6 +16,8 @@
   const init = () => {
     const changeTheme = document.querySelector(".js-changeTheme");
     changeTheme.addEventListener("click", changeBackground);
+
+    welcome();
   };
 
   init();
